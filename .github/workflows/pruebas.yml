@@ -8,8 +8,8 @@ jobs:
     #runs-on: ubuntu-latest
     runs-on: ${{ matrix.os }}
     strategy:
-    matrix:
-      os: [macos-latest, windows-latest, ubuntu-18.04]
+      matrix:
+        os: [macos-latest, windows-latest, ubuntu-18.04]
     steps:
     - name: Checkout de repositorio
       uses: actions/checkout@v2
